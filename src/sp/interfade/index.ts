@@ -1,7 +1,12 @@
-export interface Client {
+export interface InterFade_Client {
   id: number;
   username: string;
   email: string;
+}
+
+export interface InterFade_Data_Clients {
+  Client: InterFade_Client;
+  access_token: string;
 }
 
 export interface Img {
@@ -31,3 +36,19 @@ export interface Partner {
   name: string;
   avatar: number;
 }
+
+export interface Production {
+  name: string;
+  size: string;
+  quantative: string;
+  type_paper: string;
+  tag: string;
+  idCate: number;
+}
+
+export interface Category {
+  id: number;
+  name: string;
+}
+
+export interface InterFade_Data_PL {}
