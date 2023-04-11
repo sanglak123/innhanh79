@@ -1,0 +1,67 @@
+html,
+body {
+    font-family: montserrat_thin;
+    font-weight: $fw4;
+    font-size: $fs16;
+    box-sizing: border-box;
+}
+
+#btn_btt {
+    position: fixed;
+    bottom: 55px;
+    right: 5px;
+    z-index: 999;
+    background-color: transparent;
+    transform: rotate(-90deg);
+    border: none;
+    transition: 0.5s;
+    &::after {
+        content: "";
+        width: 50%;
+        height: 1px;
+        background-color: $gray300;
+        display: block;
+        transition: 0.5s;
+    }
+    &:hover {
+        &::after {
+            width: 100%;
+        }
+    }
+}
+
+.bsd {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.bgr_white {
+    background-color: white !important;
+}
+.bgr_blue {
+    background-color: $blue600 !important;
+}
+
+.innhanh_header {
+    @include txtStyle($fs25, $fw7, white);
+}
+
+.w-95 {
+    width: 95%;
+    margin: 0 auto;
+}
+.w90 {
+    width: 90%;
+    margin: 0 auto;
+}
+.w85 {
+    width: 85%;
+    margin: 0 auto;
+}
+.w80 {
+    width: 80%;
+    margin: 0 auto;
+}
+.w50 {
+    width: 50%;
+    margin: 0 auto;
+}

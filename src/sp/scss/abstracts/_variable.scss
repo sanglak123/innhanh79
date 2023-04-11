@@ -1,0 +1,60 @@
+//Color
+$blue100: blue;
+$blue200: rgb(0, 0, 200);
+$blue300: rgb(0, 0, 196);
+$blue400: rgb(1, 1, 156);
+$blue500: rgb(0, 0, 143);
+$blue600: rgb(0, 0, 122);
+$blue600: rgb(0, 0, 83);
+
+$gray300: #4c4c4c;
+$gray200: #757575;
+$gray100: #969696;
+
+//font family
+@font-face {
+    font-family: montserrat_thin;
+    src: "/fonts/Montserrat-Thin.ttf";
+}
+@font-face {
+    font-family: montserrat;
+    src: "/fonts/Montserrat-Medium.ttf";
+}
+@font-face {
+    font-family: montserrat_bold;
+    src: "/fonts/Montserrat-ExtraBold.ttf";
+}
+
+//Font size
+$fs16: 16px;
+$fs20: 20px;
+$fs25: 25px;
+$fs30: 30px;
+
+//Font weight
+$fw1: 100;
+$fw2: 200;
+$fw3: 300;
+$fw4: 400;
+$fw5: 500;
+$fw6: 600;
+$fw7: 700;
+
+//Padding
+$pd5: 5px;
+$pd15: 15px;
+$pd20: 20px;
+$pd25: 25px;
+$pd30: 30px;
+$pd35: 35px;
+$pd40: 40px;
+
+//Margin
+$mg5: 5px;
+$mg10: 10px;
+$mg15: 15px;
+$mg20: 20px;
+$mg25: 25px;
+$mg30: 30px;
+$mg35: 35px;
+$mg40: 40px;

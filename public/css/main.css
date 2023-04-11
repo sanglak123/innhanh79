@@ -1,0 +1,84 @@
+@font-face {
+  font-family: montserrat_thin;
+  src: "/fonts/Montserrat-Thin.ttf";
+}
+@font-face {
+  font-family: montserrat;
+  src: "/fonts/Montserrat-Medium.ttf";
+}
+@font-face {
+  font-family: montserrat_bold;
+  src: "/fonts/Montserrat-ExtraBold.ttf";
+}
+html,
+body {
+  font-family: montserrat_thin;
+  font-weight: 400;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+#btn_btt {
+  position: fixed;
+  bottom: 55px;
+  right: 5px;
+  z-index: 999;
+  background-color: transparent;
+  transform: rotate(-90deg);
+  border: none;
+  transition: 0.5s;
+}
+#btn_btt::after {
+  content: "";
+  width: 50%;
+  height: 1px;
+  background-color: #4c4c4c;
+  display: block;
+  transition: 0.5s;
+}
+#btn_btt:hover::after {
+  width: 100%;
+}
+
+.bsd {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.bgr_white {
+  background-color: white !important;
+}
+
+.bgr_blue {
+  background-color: rgb(0, 0, 83) !important;
+}
+
+.innhanh_header {
+  font-size: 25px;
+  font-weight: 700;
+  color: white;
+}
+
+.w-95 {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.w90 {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.w85 {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.w80 {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.w50 {
+  width: 50%;
+  margin: 0 auto;
+}
