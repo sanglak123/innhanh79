@@ -59,7 +59,7 @@ export default function Home() {
             <Row>
               {Categorys.map((item, index) => {
                 return (
-                  <Col>
+                  <Col key={index}>
                     <div className="cate_item">
                       <div className="innhanh_header">
                         <h1>{item.name}</h1>
