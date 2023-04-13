@@ -2,24 +2,27 @@ import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
-    <Html lang="en">
+    <Html>
       <Head />
+      <title>ĐỔI THẺ 24/7</title>
       <title>INNHANH79 || IN BẢN VẺ || IN QUẢNG CÁO || IN KTS</title>
-      <meta name="description" content="IN KTS || IN QUẢNG CÁO || IN BẢN VẼ" />
-
+      <link rel="icon" href="/hag.ico" />
       <link
         rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossOrigin="anonymous"
         referrerPolicy="no-referrer"
       />
-
       <link
+        href="https://fonts.googleapis.com/css2?family=Material+Icons"
         rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       />
-      <link ref="stylesheet" href="/css/main.css" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+        rel="stylesheet"
+      />
+      <link rel="stylesheet" href="/css/main.css"></link>
       <body>
         <Main />
         <NextScript />

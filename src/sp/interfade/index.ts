@@ -2,6 +2,7 @@ export interface InterFade_Client {
   id: number;
   username: string;
   email: string;
+  admin: boolean;
 }
 
 export interface InterFade_Data_Clients {
@@ -10,7 +11,6 @@ export interface InterFade_Data_Clients {
 }
 
 export interface Img {
-  id: number;
   filename: string;
   url: string;
 }
@@ -38,17 +38,25 @@ export interface Partner {
 }
 
 export interface Production {
+  id: number;
   name: string;
   size: string;
   quantative: string;
   type_paper: string;
   tag: string;
-  idCate: number;
+  icon: string;
+  Img: Img;
 }
 
 export interface Category {
   id: number;
   name: string;
+  avatar: string;
+}
+
+export interface InterFade_Partner {
+  name: string;
+  avatar: number;
 }
 
 export interface InterFade_Data_PL {}

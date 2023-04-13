@@ -8,9 +8,14 @@
 
 //Layouts
 @import "./layout/button";
+@import "./layout/carousel";
+@import "./layout/slideImg";
 
 //Components
 @import "./components/header";
+@import "./components/footer";
+@import "./components/svg/logo79GT";
+@import "./components/svg/bannerHome";
 
 //Pages
 @import "./pages/home";

@@ -1,67 +1,159 @@
 html,
 body {
-    font-family: montserrat_thin;
-    font-weight: $fw4;
-    font-size: $fs16;
-    box-sizing: border-box;
+  font-family: utm_avo;
+  font-weight: $fw4;
+  font-size: $fs16;
+  color: $gray_400;
+  box-sizing: border-box;
 }
 
+.logo {
+  text-align: center;
+  margin-top: $mg15;
+  h1 {
+    font-family: anton_black;
+    @include txtStyle($fs20 + 5, $fw7, $blue_700);
+    letter-spacing: 3px;
+    line-height: 0;
+  }
+  span {
+    font-family: mon_thin;
+    font-style: italic;
+    @include txtStyle($fs16 - 3, $fw7, $blue_700);
+
+    line-height: 0;
+  }
+}
+.header_fix {
+  z-index: 9999;
+  background-color: rgba(255, 255, 255, 0.911) !important;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  .nav_top {
+    background-color: transparent !important;
+  }
+}
 #btn_btt {
-    position: fixed;
-    bottom: 55px;
-    right: 5px;
-    z-index: 999;
-    background-color: transparent;
-    transform: rotate(-90deg);
-    border: none;
+  position: fixed;
+  bottom: 55px;
+  right: 5px;
+  z-index: 999;
+  background-color: transparent;
+  transform: rotate(-90deg);
+  border: none;
+  color: black;
+  transition: 0.5s;
+  &::after {
+    content: "";
+    width: 50%;
+    height: 1px;
+    background-color: $gray_300;
+    display: block;
     transition: 0.5s;
+  }
+  &:hover {
     &::after {
-        content: "";
-        width: 50%;
-        height: 1px;
-        background-color: $gray300;
-        display: block;
-        transition: 0.5s;
+      width: 100%;
     }
-    &:hover {
-        &::after {
-            width: 100%;
-        }
-    }
+  }
 }
 
 .bsd {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .bgr_white {
-    background-color: white !important;
+  background-color: white !important;
 }
-.bgr_blue {
-    background-color: $blue600 !important;
+.bg_black {
+  background-color: black !important;
+}
+.bgr_blue_700 {
+  background-color: $blue_700 !important;
+}
+.txt_black {
+  color: black !important;
 }
 
 .innhanh_header {
-    @include txtStyle($fs25, $fw7, white);
+  h1 {
+    span {
+      font-family: utm_avo;
+      @include txtStyle($fs30, $fw4, $orange);
+    }
+    font-family: utm_avo_bold;
+    @include txtStyle($fs40, $fw7, $blue_700);
+  }
 }
 
 .w-95 {
-    width: 95%;
-    margin: 0 auto;
+  width: 95%;
+  margin: 0 auto;
 }
 .w90 {
-    width: 90%;
-    margin: 0 auto;
+  width: 90%;
+  margin: 0 auto;
 }
 .w85 {
-    width: 85%;
-    margin: 0 auto;
+  width: 85%;
+  margin: 0 auto;
 }
 .w80 {
-    width: 80%;
-    margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
 }
 .w50 {
-    width: 50%;
-    margin: 0 auto;
+  width: 50%;
+  margin: 0 auto;
+}
+
+//Animations
+.delay_1s {
+  animation-delay: 1s;
+}
+.delay_1_5s {
+  animation-delay: 1.5s;
+}
+.delay_2s {
+  animation-delay: 2s;
+}
+.delay_2-3s {
+  animation-delay: 2.3s;
+}
+.delay_2-5s {
+  animation-delay: 2.5s;
+}
+.delay_2-7s {
+  animation-delay: 2.7s;
+}
+.delay_3s {
+  animation-delay: 3s;
+}
+.delay_3_5s {
+  animation-delay: 3.5s;
+}
+.delay_4s {
+  animation-delay: 4s;
+}
+.delay_4_5s {
+  animation-delay: 4.5s;
+}
+.delay_5s {
+  animation-delay: 5s;
+}
+
+//align text
+.txt_center {
+  text-align: center;
+}
+
+.txt_left {
+  text-align: left;
+}
+.txt_right {
+  text-align: right;
 }

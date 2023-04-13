@@ -1,0 +1,52 @@
+@keyframes AnimationContact {
+  to {
+    transform: translate(-50%, -50%) scale(1.4);
+    border: 7px solid rgb(235, 48, 48);
+  }
+}
+
+@keyframes AnimationContactRotate {
+  to {
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-3px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes LeftToRight {
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes border {
+  0% {
+    box-shadow: 60px -60px 0 2px white, -60px -60px 0 2px white,
+      -60px 60px 0 2px white, 60px 60px 0 2px white, 0 0 0 2px #e94e3d;
+  }
+  25% {
+    box-shadow: 0 -125px 0 2px white, -60px -60px 0 2px white,
+      -60px 60px 0 2px white, 60px 60px 0 2px white, 0 0 0 2px #fff;
+  }
+  50% {
+    box-shadow: 0 -125px 0 2px white, -125px 0px 0 2px white,
+      -60px 60px 0 2px white, 60px 60px 0 2px white, 0 0 0 2px #fff;
+  }
+  75% {
+    box-shadow: 0 -125px 0 2px white, -125px 0px 0 2px white,
+      0px 125px 0 2px white, 60px 60px 0 2px white, 0 0 0 2px #fff;
+  }
+  100% {
+    box-shadow: 0 -125px 0 2px white, -125px 0px 0 2px white,
+      0px 125px 0 2px white, 120px 40px 0 2px white, 0 0 0 2px #fff;
+  }
+}

@@ -1,0 +1,54 @@
+#logo_79GT {
+  z-index: 99999;
+  width: 80px;
+  #in79_line {
+    #Dot {
+      stroke-width: 2px;
+      stroke: $blue_700;
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation-delay: 2s;
+      animation: dash 5s linear alternate infinite;
+    }
+    #_7 {
+      stroke-width: 2px;
+      stroke: $blue_700;
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation-delay: 2s;
+      animation: dash 5s linear alternate infinite;
+    }
+    #_9 {
+      stroke-width: 2px;
+      stroke: $blue_700;
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation-delay: 2s;
+      animation: dash 5s linear alternate infinite;
+    }
+    #txt_G {
+      stroke-width: 2px;
+      stroke: $blue_700;
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation-delay: 2s;
+      animation: dash 5s linear alternate infinite;
+    }
+    #txt_T {
+      stroke-width: 2px;
+      stroke: $blue_700;
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation-delay: 2s;
+      animation: dash 5s linear alternate infinite;
+    }
+  }
+}
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1500;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}

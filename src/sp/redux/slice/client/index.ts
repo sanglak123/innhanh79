@@ -23,6 +23,9 @@ const Clients_Slice = createSlice({
 
 export const { Sign_In_Success } = Clients_Slice.actions;
 
-export const Data_PL_Selector = (state: RootState) => state.Clients_Slice;
+export const Clients_Selector = {
+  Client: (state: RootState) => state.Clients_Slice.Client,
+  access_token: (state: RootState) => state.Clients_Slice.access_token,
+};
 
 export default Clients_Slice;

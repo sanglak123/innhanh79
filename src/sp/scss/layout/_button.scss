@@ -1,0 +1,31 @@
+.btn_success {
+  width: 150px;
+  padding: $pd10;
+  border-radius: 3px;
+  border: 1px solid blue !important;
+  background-color: transparent;
+  color: blue;
+  margin: 0 $mg5;
+  transition: 0.5s;
+  &:hover {
+    background-color: $blue_700 !important;
+    color: white;
+    border: none !important;
+  }
+}
+
+.btn_primary {
+  width: 150px;
+  padding: $pd10;
+  border-radius: 3px;
+  border: 1px solid $blue_100 !important;
+  background-color: transparent;
+  color: $blue_100;
+  margin: 0 $mg5;
+  transition: 0.5s;
+  &:hover {
+    background-color: $blue_100 !important;
+    color: white;
+    border: none !important;
+  }
+}

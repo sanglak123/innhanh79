@@ -1,0 +1,65 @@
+#innhanh_footer {
+  .footer_top {
+    background-color: $blue_700;
+    padding: $pd50 0;
+    .footer_content {
+      .innhanh_logo {
+        text-align: center;
+        #logo_79GT {
+          width: 40%;
+        }
+        span {
+          display: block;
+          font-family: utm_avo;
+          @include txtStyle($fs16 - 3, $fw2, white);
+          font-style: italic;
+          letter-spacing: 2px;
+        }
+      }
+      .innhanh_time {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: $mg20;
+        .time_icon {
+          span {
+            font-size: $fs30 + 50px;
+            color: white;
+          }
+        }
+      }
+      .footer_item {
+        .footer_header {
+          font-family: utm_avo_bold;
+          font-size: $fs25;
+          color: white;
+        }
+        .footer_info {
+          ul {
+            list-style: none;
+            padding: 0;
+            li {
+              display: flex;
+              color: white;
+              margin-left: 0;
+              cursor: pointer;
+              a {
+                text-decoration: none;
+                color: white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer_bot {
+    background-color: rgb(0, 0, 43);
+    padding: $pd10 0;
+    text-align: center;
+    span {
+      font-size: 13px;
+      font-style: italic;
+    }
+  }
+}

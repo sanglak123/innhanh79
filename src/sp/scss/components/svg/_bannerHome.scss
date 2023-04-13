@@ -1,0 +1,44 @@
+#banner_home {
+  #gr_img {
+    #pw {
+      opacity: 0;
+      width: 240%;
+      animation-name: animate_pw;
+      animation-duration: 2s;
+      animation-fill-mode: forwards;
+      animation-delay: 2.4s;
+    }
+    #konica {
+      opacity: 0;
+      width: 240%;
+      animation-name: animate_konica;
+      animation-duration: 2s;
+      animation-fill-mode: forwards;
+      animation-delay: 1s;
+    }
+  }
+  #Hot_line {
+    cursor: pointer;
+  }
+}
+
+@keyframes animate_pw {
+  from {
+    transform: translate(150%, 5%) scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: translate(50%, 5%) scale(0.25);
+    opacity: 1;
+  }
+}
+@keyframes animate_konica {
+  from {
+    transform: translate(150%, 40%) scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: translate(50%, 40%) scale(0.24);
+    opacity: 1;
+  }
+}

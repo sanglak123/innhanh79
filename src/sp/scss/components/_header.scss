@@ -1,0 +1,132 @@
+#hearder {
+  .header_top {
+    background-image: linear-gradient(to left, $blue_700, $blue_100);
+    padding: 0.3rem 0;
+    @media only screen and (max-width: 1200px) {
+      display: none;
+    }
+    .header_top_content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      padding: 0.3rem 0;
+      .top_left {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .left_item {
+          a {
+            font-size: 13px;
+            color: white;
+            text-decoration: none;
+          }
+        }
+      }
+      .top_right {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .contact {
+          margin: 0 $mg10;
+          a {
+            color: white;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  .header_main {
+    .nav_link {
+      color: $gray_300;
+      font-family: mon_regular;
+      font-size: 1rem;
+      transition: 0.5s;
+      &::after {
+        content: "";
+        display: block;
+        width: 0%;
+        height: 1px;
+        background-color: black;
+        transition: 0.5s;
+      }
+      &.active,
+      &:hover {
+        color: black;
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+
+    .nav_right {
+      button {
+        background-color: transparent;
+        border: none;
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
+@keyframes alo {
+  from {
+    padding: 0px;
+    background-color: red;
+  }
+  to {
+    padding: 3px;
+    background-color: orangered;
+  }
+}
+
+@keyframes alo_affter {
+  0% {
+    border: 0 solid red;
+  }
+  50% {
+    border: 5px solid red;
+  }
+  100% {
+    border: 0 solid red;
+  }
+}
+
+@keyframes trin {
+  from {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  20%,
+  32%,
+  44%,
+  56%,
+  68% {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  23%,
+  35%,
+  47%,
+  59%,
+  71% {
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+  26%,
+  38%,
+  50%,
+  62%,
+  74% {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  29%,
+  41%,
+  53%,
+  65%,
+  77% {
+    transform: rotate3d(0, 0, 1, -15deg);
+  }
+  80% {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}

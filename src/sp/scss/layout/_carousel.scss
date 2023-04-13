@@ -1,0 +1,10 @@
+#myCarousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin: $mg25 0;
+  img {
+    border-radius: 7px;
+    overflow: hidden;
+  }
+}
