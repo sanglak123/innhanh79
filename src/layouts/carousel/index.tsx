@@ -21,7 +21,7 @@ function Innhanh_Carousel() {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="/imgs/banners/Banner1.jpg"
+              src="/img/banner/Banner1.jpg"
               alt="First slide"
             />
           </Carousel.Item>
@@ -29,35 +29,35 @@ function Innhanh_Carousel() {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="/imgs/banners/Banner2.jpg"
+              src="/img/banner/Banner2.jpg"
               alt="First slide"
             />
           </Carousel.Item>
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="/imgs/banners/Banner3.jpg"
+              src="/img/banner/Banner3.jpg"
               alt="First slide"
             />
           </Carousel.Item>
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="/imgs/banners/Banner4.jpg"
+              src="/img/banner/Banner4.jpg"
               alt="First slide"
             />
           </Carousel.Item>
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="/imgs/banners/Banner5.jpg"
+              src="/img/banner/Banner5.jpg"
               alt="First slide"
             />
           </Carousel.Item>
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="/imgs/banners/Banner6.jpg"
+              src="/img/banner/Banner6.jpg"
               alt="First slide"
             />
           </Carousel.Item>

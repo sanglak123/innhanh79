@@ -8,6 +8,7 @@ import Logo_79GT from "../svg/Logo_79GT";
 import ModalSetting from "@/components/Modal/ModalSetting";
 import ModalSignIn from "../Modal/ModalSignIn";
 import ModalSignUp from "../Modal/ModalSignUp";
+import { Categorys } from "@/data/data_fake/dataFake";
 
 const Innhanh_Header = () => {
   const router = useRouter();
@@ -126,59 +127,22 @@ const Innhanh_Header = () => {
                   >
                     Home
                   </Nav.Link>
-                  <Nav.Link
-                    className={
-                      router.asPath === "/in-nhanh"
-                        ? "nav_link active"
-                        : "nav_link"
-                    }
-                    href="/in-nhanh"
-                  >
-                    In Nhanh
-                  </Nav.Link>
-                  <Nav.Link
-                    className={
-                      router.asPath === "/in-quang-cao"
-                        ? "nav_link active"
-                        : "nav_link"
-                    }
-                    href="/in-quang-cao"
-                  >
-                    In Quảng Cáo
-                  </Nav.Link>
 
-                  <Nav.Link
-                    className={
-                      router.asPath === "/in-ban-ve"
-                        ? "nav_link active"
-                        : "nav_link"
-                    }
-                    href="/in-ban-ve"
-                  >
-                    In Bản Vẽ
-                  </Nav.Link>
-
-                  <Nav.Link
-                    className={
-                      router.asPath === "/thiet-ke-sang-tao"
-                        ? "nav_link active"
-                        : "nav_link"
-                    }
-                    href="/thiet-ke-sang-tao"
-                  >
-                    Thiết kế - Sáng tạo
-                  </Nav.Link>
-
-                  <Nav.Link
-                    className={
-                      router.asPath === "/setup-events"
-                        ? "nav_link active"
-                        : "nav_link"
-                    }
-                    href="/setup-events"
-                  >
-                    Setup Events
-                  </Nav.Link>
+                  {Categorys.map((item, index) => {
+                    return (
+                      <Nav.Link
+                        key={index}
+                        className={
+                          router.asPath === item.url
+                            ? "nav_link active"
+                            : "nav_link"
+                        }
+                        href={item.url}
+                      >
+                        {item.name}
+                      </Nav.Link>
+                    );
+                  })}
                 </Nav>
 
                 <Nav className="ms-auto my-2 my-lg-0 nav_right" navbarScroll>

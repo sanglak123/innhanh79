@@ -1,40 +1,36 @@
 import { Category } from "@/sp/interfade";
-import { Img, InterFade_Partner, Production } from "@/sp/interfade";
-
-export const ArrayImgs: Img[] = [
-  { filename: "intro1.jpg", url: "/imgs/intros/intro1.jpg" },
-  { filename: "intro2.jpg", url: "/imgs/intros/intro2.jpg" },
-  { filename: "intro3.jpg", url: "/imgs/intros/intro3.jpg" },
-  { filename: "intro1.jpg", url: "/imgs/intros/intro1.jpg" },
-  { filename: "intro2.jpg", url: "/imgs/intros/intro2.jpg" },
-  { filename: "intro3.jpg", url: "/imgs/intros/intro3.jpg" },
-];
+import { InterFade_Partner, Production } from "@/sp/interfade";
 
 export const Categorys: Category[] = [
   {
     id: 1,
     name: "In Nhanh",
     avatar: "/imgs/categorys/innhanh.jpg",
+    url: "/in-nhanh",
   },
   {
     id: 2,
     name: "In Quảng Cáo",
     avatar: "/imgs/categorys/inquangcao.jpg",
+    url: "/in-quang-cao",
   },
   {
     id: 3,
     name: "In Bản Vẽ",
     avatar: "/imgs/categorys/inbanve.jpg",
+    url: "/in-ban-ve",
   },
   {
     id: 4,
     name: "Thiết kế - Sáng tạo",
     avatar: "/imgs/categorys/thietkesangtao.jpg",
+    url: "/thiet-ke-sang-tao",
   },
   {
     id: 4,
     name: "Setup Event",
     avatar: "/imgs/categorys/setupevent.jpg",
+    url: "/setup-event",
   },
 ];
 export const Productions: Production[] = [
@@ -47,6 +43,7 @@ export const Productions: Production[] = [
     tag: "In Nhanh, In Offset",
     icon: "/imgs/icons/inbaothu.png",
     Img: {
+      id: 1,
       filename: "inbaothu.jpg",
       url: "/imgs/products/inbaothu.jpg",
     },
@@ -60,6 +57,7 @@ export const Productions: Production[] = [
     tag: "In Nhanh, In Offset",
     icon: "/imgs/icons/innamecard.png",
     Img: {
+      id: 2,
       filename: "innamecard.jpg",
       url: "/imgs/products/innamecard.jpg",
     },
@@ -73,6 +71,7 @@ export const Productions: Production[] = [
     tag: "In Nhanh, In Offset",
     icon: "/imgs/icons/intoroi.png",
     Img: {
+      id: 3,
       filename: "intoroi.jpg",
       url: "/imgs/products/intoroi.jpg",
     },
@@ -86,6 +85,7 @@ export const Productions: Production[] = [
     tag: "In Nhanh, In Offset, Bấm Kim, Keo Gáy",
     icon: "/imgs/icons/inmenu.png",
     Img: {
+      id: 4,
       filename: "inmenu.jpg",
       url: "/imgs/products/inmenu.jpg",
     },
@@ -99,6 +99,7 @@ export const Productions: Production[] = [
     tag: "In Nhanh, In Offset, Bấm Kim, Keo Gáy",
     icon: "/imgs/icons/incatalogue.png",
     Img: {
+      id: 5,
       filename: "incatalogue.jpg",
       url: "/imgs/products/incatalogue.jpg",
     },
@@ -112,6 +113,7 @@ export const Productions: Production[] = [
     tag: "Màng Bóng, Màng Mờ",
     icon: "/imgs/icons/infolder.png",
     Img: {
+      id: 6,
       filename: "infolder.jpg",
       url: "/imgs/products/infolder.jpg",
     },
@@ -125,6 +127,7 @@ export const Productions: Production[] = [
     tag: "2, 3, 4 liên, bấm kim, keo gáy",
     icon: "/imgs/icons/inbill.png",
     Img: {
+      id: 7,
       filename: "inbill.jpg",
       url: "/imgs/products/inbill.jpg",
     },
@@ -138,15 +141,9 @@ export const Productions: Production[] = [
     tag: "Cắt bế hình dạng theo yêu cầu",
     icon: "/imgs/icons/insticker.png",
     Img: {
+      id: 8,
       filename: "insticker.jpg",
       url: "/imgs/products/insticker.jpg",
     },
-  },
-];
-
-export const Partners: InterFade_Partner[] = [
-  {
-    name: "BCA",
-    avatar: 1,
   },
 ];

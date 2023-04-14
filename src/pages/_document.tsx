@@ -4,7 +4,6 @@ export default function Document() {
   return (
     <Html>
       <Head />
-      <title>ĐỔI THẺ 24/7</title>
       <title>INNHANH79 || IN BẢN VẺ || IN QUẢNG CÁO || IN KTS</title>
       <link rel="icon" href="/hag.ico" />
       <link

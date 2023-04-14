@@ -1,7 +1,7 @@
 #innhanh_footer {
   .footer_top {
     background-color: $blue_700;
-    padding: $pd50 0;
+    padding: $pd50 0 0 0;
     .footer_content {
       .innhanh_logo {
         text-align: center;
@@ -29,10 +29,26 @@
         }
       }
       .footer_item {
+        padding: $pd10;
+        &:hover {
+          .footer_header {
+            &::after {
+              width: 100%;
+            }
+          }
+        }
         .footer_header {
           font-family: utm_avo_bold;
           font-size: $fs25;
           color: white;
+          &::after {
+            content: "";
+            width: 50%;
+            height: 3px;
+            display: block;
+            background-color: white;
+            transition: 3s;
+          }
         }
         .footer_info {
           ul {
@@ -41,11 +57,26 @@
             li {
               display: flex;
               color: white;
-              margin-left: 0;
+              margin: $mg10 0;
               cursor: pointer;
               a {
                 text-decoration: none;
                 color: white;
+              }
+              .innhanh_icon {
+                width: 30px;
+                height: 30px;
+
+                text-align: center;
+
+                img {
+                  width: 30px;
+                  height: 30px;
+                  line-height: 30px;
+                  border: 1px solid white;
+                  border-radius: 50%;
+                  padding: $pd10 - 7;
+                }
               }
             }
           }

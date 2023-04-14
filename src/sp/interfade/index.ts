@@ -11,6 +11,7 @@ export interface InterFade_Data_Clients {
 }
 
 export interface Img {
+  id: number;
   filename: string;
   url: string;
 }
@@ -51,12 +52,15 @@ export interface Production {
 export interface Category {
   id: number;
   name: string;
-  avatar: string;
+  avatar: number;
+  url: string;
+  Img: Img;
 }
 
 export interface InterFade_Partner {
   name: string;
   avatar: number;
+  Img: Img;
 }
 
 export interface InterFade_Data_PL {}
