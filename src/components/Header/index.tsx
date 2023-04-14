@@ -5,10 +5,9 @@ import React, { useEffect, useState } from "react";
 import { Button, Nav, Navbar } from "react-bootstrap";
 import { useSelector } from "react-redux";
 import Logo_79GT from "../svg/Logo_79GT";
-import ModalSetting from "@/components/Modal/ModalSetting";
 import ModalSignIn from "../Modal/ModalSignIn";
 import ModalSignUp from "../Modal/ModalSignUp";
-import { Categorys } from "@/data/data_fake/dataFake";
+import { Categorys } from "@/data/data_fake/Categorys";
 
 const Innhanh_Header = () => {
   const router = useRouter();

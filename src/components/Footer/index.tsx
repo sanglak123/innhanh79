@@ -1,8 +1,8 @@
 import React from "react";
-import { Button, Col, Form, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import Logo_79GT from "../svg/Logo_79GT";
 import Link from "next/link";
-import { Categorys } from "@/data/data_fake/dataFake";
+import { Categorys } from "@/data/data_fake/Categorys";
 
 const InNhanh_Footer = () => {
   return (
