@@ -6,6 +6,7 @@ import Link from "next/link";
 import SlidePartners from "@/layouts/slidePartners";
 import { Productions } from "@/data/data_fake/Productions";
 import { Categorys } from "@/data/data_fake/Categorys";
+import SlideRating from "@/layouts/slideRating";
 
 export default function Home() {
   return (
@@ -152,39 +153,37 @@ export default function Home() {
                   <Col key={index} xs={12} sm={12} md={6} xl={4} xxl={3}>
                     <div className="product_item">
                       <div className="product_img">
+                        <div className="overlay"></div>
                         <img src={item.Img.url} alt={item.Img.filename} />
                       </div>
 
-                      <div className="product_header">
-                        <span className="material-symbols-outlined me-3">
-                          mail
-                        </span>
-                        <h4>{item.name}</h4>
-                      </div>
-                      <div className="product_info">
-                        <ul>
-                          <li>
-                            <span>
-                              Kích thước: <span>{item.size}</span>
-                            </span>
-                          </li>
-                          <li>
-                            <span>
-                              Định lượng: <span>{item.quantative}</span>
-                            </span>
-                          </li>
-                          <li>
-                            <span>
-                              Loại giấy: <span>{item.type_paper}</span>
-                            </span>
-                          </li>
-                          <li>
-                            <span>{item.tag}</span>
-                          </li>
-                        </ul>
-                      </div>
-                      <div className="product_btn txt_right">
-                        <Button className="w-100 p-2">Xem thêm</Button>
+                      <div className="product_main">
+                        <div className="product_header">
+                          <span className="material-symbols-outlined me-3">
+                            mail
+                          </span>
+                          <h4>{item.name}</h4>
+                        </div>
+                        <div className="product_info">
+                          <ul>
+                            <li>
+                              <span>Kích thước:</span>
+                              <span>{item.size}</span>
+                            </li>
+                            <li>
+                              <span>Định lượng:</span>
+                              <span>{item.quantative}</span>
+                            </li>
+                            <li>
+                              <span>Loại giấy:</span>
+                              <span>{item.type_paper}</span>
+                            </li>
+                            <li>
+                              <span></span>
+                              <span>{item.tag}</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </Col>
@@ -194,8 +193,8 @@ export default function Home() {
           </div>
         </Container>
       </section>
-
-      <section id="partners_in79" className="mt-3 mb-3">
+      {/* Partner */}
+      <section id="partners_in79">
         <Container>
           <div className="partners_content">
             <div className="innhanh_header">
@@ -209,10 +208,17 @@ export default function Home() {
           </div>
         </Container>
       </section>
-
+      {/* Rating */}
       <section id="rating">
         <Container>
-          <div className="rating_content"></div>
+          <div className="rating_content">
+            <div className="innhanh_header">
+              <h1>
+                <span>Đánh giá của </span>KHÁCH HÀNG
+              </h1>
+            </div>
+            <SlideRating />
+          </div>
         </Container>
       </section>
     </>
