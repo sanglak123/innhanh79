@@ -199,7 +199,7 @@ export default function Home() {
           <div className="partners_content">
             <div className="innhanh_header">
               <h1>
-                <span>Đối tác</span> INHNANH79
+                <span>Đối tác</span> INNHANH79
               </h1>
             </div>
             <div className="partners">
