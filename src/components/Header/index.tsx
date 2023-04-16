@@ -40,146 +40,148 @@ const Innhanh_Header = () => {
       behavior: "smooth",
     });
   };
-  return (
-    <>
-      <div id="hearder" className="bsd">
-        <div id="headerTop" className="header_top bgr_blue_700">
-          <div className="w-95">
-            <div className="header_top_content">
-              <div className="top_left">
-                <div className="left_item me-3">
-                  <Link href={"/gioi-thieu"}>Giới thiệu</Link>
-                </div>
-                <div className="left_item me-3">
-                  <Link href={"/thanh-toan"}>Thanh toán</Link>
-                </div>
-                <div className="left_item me-3">
-                  <Link href={"/chinh-sach"}>Thỏa thuận - Chính sách</Link>
+
+  if (router.asPath !== "/admin/dashboard")
+    return (
+      <>
+        <div id="hearder" className="bsd">
+          <div id="headerTop" className="header_top bgr_blue_700">
+            <div className="w-95">
+              <div className="header_top_content">
+                <div className="top_left">
+                  <div className="left_item me-3">
+                    <Link href={"/gioi-thieu"}>Giới thiệu</Link>
+                  </div>
+                  <div className="left_item me-3">
+                    <Link href={"/thanh-toan"}>Thanh toán</Link>
+                  </div>
+                  <div className="left_item me-3">
+                    <Link href={"/thoa-thuan"}>Thỏa thuận - Chính sách</Link>
+                  </div>
+
+                  <div className="left_item me-3">
+                    <Link href={"/lien-he"}>Liên hệ</Link>
+                  </div>
                 </div>
 
-                <div className="left_item me-3">
-                  <Link href={"/lien-he"}>Liên hệ</Link>
-                </div>
-              </div>
+                <div className="top_right">
+                  <div className="contact">
+                    <Link className="d-flex" href={"tel:0888229079"}>
+                      <span className="material-symbols-outlined me-2 right_icon">
+                        phone_in_talk
+                      </span>
+                      <span>0888 229 079</span>
+                    </Link>
+                  </div>
 
-              <div className="top_right">
-                <div className="contact">
-                  <Link className="d-flex" href={"tel:0888229079"}>
-                    <span className="material-symbols-outlined me-2 right_icon">
-                      phone_in_talk
-                    </span>
-                    <span>0888 229 079</span>
-                  </Link>
-                </div>
+                  <div className="contact">
+                    <Link
+                      className="d-flex"
+                      href={"mailto:innhanh7979@gmail.com"}
+                    >
+                      <span className="material-symbols-outlined me-2 right_icon">
+                        email
+                      </span>
+                      <span>innhanh7979@gmail.com</span>
+                    </Link>
+                  </div>
 
-                <div className="contact">
-                  <Link
-                    className="d-flex"
-                    href={"mailto:innhanh7979@gmail.com"}
-                  >
-                    <span className="material-symbols-outlined me-2 right_icon">
-                      email
-                    </span>
-                    <span>innhanh7979@gmail.com</span>
-                  </Link>
-                </div>
-
-                <div className="contact">
-                  <Link className="d-flex" href={"/"}>
-                    <span className="me-2">
-                      <i className="fab fa-facebook-f"></i>
-                    </span>
-                    <span> In Nhanh</span>
-                  </Link>
+                  <div className="contact">
+                    <Link className="d-flex" href={"/"}>
+                      <span className="me-2">
+                        <i className="fab fa-facebook-f"></i>
+                      </span>
+                      <span> In Nhanh</span>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div id="headerMain" className="header_main">
-          <div className="w-95">
-            <Navbar
-              collapseOnSelect
-              expand="xl"
-              className="bg_white nav_top"
-              variant="light"
-            >
-              <Navbar.Brand className="me-5" href="/">
-                <Logo_79GT />
-              </Navbar.Brand>
-
-              <Navbar.Toggle
-                aria-controls="basic-navbar-nav"
-                id="btn_responsive"
+          <div id="headerMain" className="header_main">
+            <div className="w-95">
+              <Navbar
+                collapseOnSelect
+                expand="xl"
+                className="bg_white nav_top"
+                variant="light"
               >
-                <span className="material-symbols-outlined">subject</span>
-              </Navbar.Toggle>
+                <Navbar.Brand className="me-5" href="/">
+                  <Logo_79GT />
+                </Navbar.Brand>
 
-              <Navbar.Collapse id="responsive-navbar-nav">
-                <Nav className="me-auto my-2 my-lg-0 nav_left" navbarScroll>
-                  <Nav.Link
-                    className={
-                      router.asPath === "/" ? "nav_link active" : "nav_link"
-                    }
-                    href="/"
-                  >
-                    Home
-                  </Nav.Link>
+                <Navbar.Toggle
+                  aria-controls="basic-navbar-nav"
+                  id="btn_responsive"
+                >
+                  <span className="material-symbols-outlined">subject</span>
+                </Navbar.Toggle>
 
-                  {Categorys.map((item, index) => {
-                    return (
-                      <Nav.Link
-                        key={index}
-                        className={
-                          router.asPath === item.url
-                            ? "nav_link active"
-                            : "nav_link"
-                        }
-                        href={item.url}
-                      >
-                        {item.name}
-                      </Nav.Link>
-                    );
-                  })}
-                </Nav>
+                <Navbar.Collapse id="responsive-navbar-nav">
+                  <Nav className="me-auto my-2 my-lg-0 nav_left" navbarScroll>
+                    <Nav.Link
+                      className={
+                        router.asPath === "/" ? "nav_link active" : "nav_link"
+                      }
+                      href="/"
+                    >
+                      Trang Chủ
+                    </Nav.Link>
 
-                <Nav className="ms-auto my-2 my-lg-0 nav_right" navbarScroll>
-                  <Button
-                    className="btn_success d-flex"
-                    onClick={() => setSignIn(true)}
-                  >
-                    <span className="material-symbols-outlined me-2">
-                      login
-                    </span>
-                    <span> Đăng nhập</span>
-                  </Button>
+                    {Categorys.map((item, index) => {
+                      return (
+                        <Nav.Link
+                          key={index}
+                          className={
+                            router.asPath === item.url
+                              ? "nav_link active"
+                              : "nav_link"
+                          }
+                          href={item.url}
+                        >
+                          {item.name}
+                        </Nav.Link>
+                      );
+                    })}
+                  </Nav>
 
-                  <Button
-                    className="btn_primary d-flex"
-                    onClick={() => setSignUp(true)}
-                  >
-                    <span className="material-symbols-outlined me-2">
-                      how_to_reg
-                    </span>
-                    <span> Đăng ký</span>
-                  </Button>
-                </Nav>
-              </Navbar.Collapse>
-            </Navbar>
+                  <Nav className="ms-auto my-2 my-lg-0 nav_right" navbarScroll>
+                    <Button
+                      className="btn_success d-flex"
+                      onClick={() => setSignIn(true)}
+                    >
+                      <span className="material-symbols-outlined me-2">
+                        login
+                      </span>
+                      <span> Đăng nhập</span>
+                    </Button>
+
+                    <Button
+                      className="btn_primary d-flex"
+                      onClick={() => setSignUp(true)}
+                    >
+                      <span className="material-symbols-outlined me-2">
+                        how_to_reg
+                      </span>
+                      <span> Đăng ký</span>
+                    </Button>
+                  </Nav>
+                </Navbar.Collapse>
+              </Navbar>
+            </div>
           </div>
+          {/* Modal */}
+          <ModalSignIn show={SignIn} setShow={setSignIn} />
+          <ModalSignUp show={SignUp} setShow={setSignUp} />
         </div>
-        {/* Modal */}
-        <ModalSignIn show={SignIn} setShow={setSignIn} />
-        <ModalSignUp show={SignUp} setShow={setSignUp} />
-      </div>
-      {show && (
-        <Button id="btn_btt" onClick={() => handleBackTo()}>
-          Back to top
-        </Button>
-      )}
-    </>
-  );
+        {show && (
+          <Button id="btn_btt" onClick={() => handleBackTo()}>
+            Back to top
+          </Button>
+        )}
+      </>
+    );
 };
 
 export default Innhanh_Header;

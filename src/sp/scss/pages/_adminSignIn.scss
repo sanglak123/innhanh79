@@ -1,0 +1,44 @@
+#admin_sign_auth {
+  padding: 70px 0;
+  margin: auto;
+  .auth_content {
+    width: 60%;
+    padding: 35px;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 7px;
+    .auth_header {
+      text-align: center;
+      #logo_79GT {
+        width: 30% !important;
+        margin: 0 auto;
+      }
+      p {
+        letter-spacing: 4px;
+        font-style: italic;
+      }
+    }
+    .input_auth {
+      .input_link {
+        button {
+          background-color: transparent;
+          color: $gray_400;
+          border: none;
+          transition: 0.5s;
+          &:hover {
+            color: blue;
+            text-decoration: underline;
+          }
+        }
+      }
+      .input_btn_auth {
+        button {
+          border-radius: 7px;
+          padding: 15px;
+          width: 150px;
+          margin: 0 $mg5;
+        }
+      }
+    }
+  }
+}

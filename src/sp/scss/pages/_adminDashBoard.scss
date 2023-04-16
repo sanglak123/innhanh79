@@ -1,0 +1,104 @@
+#dashboard {
+  color: white;
+  .db_content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    .db_left_side {
+      width: 15%;
+      background-color: $blue_700;
+      height: 100vh;
+      .db_logo {
+        text-align: center;
+        padding-top: $pd30;
+        position: relative;
+        p {
+          font-style: italic;
+        }
+        button {
+          position: absolute;
+          top: 0;
+          right: 0;
+          background-color: transparent;
+          border: none;
+          span {
+            font-size: 25px;
+            color: $gray_400;
+          }
+        }
+        #logo_79GT {
+          width: 45%;
+        }
+      }
+      .db_menu {
+        .menu_item {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: $pd20;
+          cursor: pointer;
+          span:first-child {
+            margin-left: 0;
+            transition: 2s;
+          }
+          span:last-child {
+            margin-right: 0;
+            transition: 2s;
+          }
+          &:hover {
+            background-color: #010a3d;
+            span:first-child {
+              margin-left: $mg15;
+            }
+            span:last-child {
+              margin-right: $mg35;
+            }
+          }
+          &.menu_active {
+            background-color: $blue_800;
+          }
+        }
+      }
+    }
+    .db_right_side {
+      width: 85%;
+      height: 100vh;
+      .views_content {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        .views_header {
+          width: 100%;
+          height: 45px;
+          padding: $pd10;
+          display: flex;
+          justify-content: space-between;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          color: black;
+          .header_link {
+            display: flex;
+            justify-content: space-between;
+          }
+        }
+        .views_main {
+          padding: $pd25;
+          height: calc(100% - 90px);
+          overflow-y: auto;
+          color: black;
+        }
+        .views_bot {
+          width: 100%;
+          height: 45px;
+          bottom: 0;
+          left: 0;
+          position: absolute;
+          padding: $pd10;
+          text-align: center;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          font-style: italic;
+          background-color: $blue_800;
+        }
+      }
+    }
+  }
+}

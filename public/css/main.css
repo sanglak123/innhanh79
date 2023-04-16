@@ -654,6 +654,22 @@ body {
     opacity: 1;
   }
 }
+#system #company .company_content {
+  padding: 25px;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 330px;
+}
+#system #company .company_content .logo #logo_79GT {
+  width: 140px;
+}
+#system #company .brabch_item {
+  height: 330px;
+  padding: 25px;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
 #about_in79 {
   padding: 70px 0;
 }
@@ -836,4 +852,146 @@ body {
 #rating .rating_content .ratings .rating_user span {
   color: blue;
   font-style: italic;
+}
+
+#admin_sign_auth {
+  padding: 70px 0;
+  margin: auto;
+}
+#admin_sign_auth .auth_content {
+  width: 60%;
+  padding: 35px;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 7px;
+}
+#admin_sign_auth .auth_content .auth_header {
+  text-align: center;
+}
+#admin_sign_auth .auth_content .auth_header #logo_79GT {
+  width: 30% !important;
+  margin: 0 auto;
+}
+#admin_sign_auth .auth_content .auth_header p {
+  letter-spacing: 4px;
+  font-style: italic;
+}
+#admin_sign_auth .auth_content .input_auth .input_link button {
+  background-color: transparent;
+  color: #757575;
+  border: none;
+  transition: 0.5s;
+}
+#admin_sign_auth .auth_content .input_auth .input_link button:hover {
+  color: blue;
+  text-decoration: underline;
+}
+#admin_sign_auth .auth_content .input_auth .input_btn_auth button {
+  border-radius: 7px;
+  padding: 15px;
+  width: 150px;
+  margin: 0 5px;
+}
+
+#dashboard {
+  color: white;
+}
+#dashboard .db_content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+#dashboard .db_content .db_left_side {
+  width: 15%;
+  background-color: rgb(0, 0, 92);
+  height: 100vh;
+}
+#dashboard .db_content .db_left_side .db_logo {
+  text-align: center;
+  padding-top: 30px;
+  position: relative;
+}
+#dashboard .db_content .db_left_side .db_logo p {
+  font-style: italic;
+}
+#dashboard .db_content .db_left_side .db_logo button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  border: none;
+}
+#dashboard .db_content .db_left_side .db_logo button span {
+  font-size: 25px;
+  color: #757575;
+}
+#dashboard .db_content .db_left_side .db_logo #logo_79GT {
+  width: 45%;
+}
+#dashboard .db_content .db_left_side .db_menu .menu_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  cursor: pointer;
+}
+#dashboard .db_content .db_left_side .db_menu .menu_item span:first-child {
+  margin-left: 0;
+  transition: 2s;
+}
+#dashboard .db_content .db_left_side .db_menu .menu_item span:last-child {
+  margin-right: 0;
+  transition: 2s;
+}
+#dashboard .db_content .db_left_side .db_menu .menu_item:hover {
+  background-color: #010a3d;
+}
+#dashboard .db_content .db_left_side .db_menu .menu_item:hover span:first-child {
+  margin-left: 15px;
+}
+#dashboard .db_content .db_left_side .db_menu .menu_item:hover span:last-child {
+  margin-right: 35px;
+}
+#dashboard .db_content .db_left_side .db_menu .menu_item.menu_active {
+  background-color: #010a3d;
+}
+#dashboard .db_content .db_right_side {
+  width: 85%;
+  height: 100vh;
+}
+#dashboard .db_content .db_right_side .views_content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#dashboard .db_content .db_right_side .views_content .views_header {
+  width: 100%;
+  height: 45px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: black;
+}
+#dashboard .db_content .db_right_side .views_content .views_header .header_link {
+  display: flex;
+  justify-content: space-between;
+}
+#dashboard .db_content .db_right_side .views_content .views_main {
+  padding: 25px;
+  height: calc(100% - 90px);
+  overflow-y: auto;
+  color: black;
+}
+#dashboard .db_content .db_right_side .views_content .views_bot {
+  width: 100%;
+  height: 45px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  padding: 10px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-style: italic;
+  background-color: #010a3d;
 }/*# sourceMappingURL=main.css.map */
